@@ -121,6 +121,7 @@ def train(model, writing_params_path, trainer_obj):
     ### Note: trainer_obj is of type Trainer (see trainer.py for more details)
 
     ### START CODE HERE
+    trainer_obj.config.ckpt_path = writing_params_path
     trainer_obj.train()
     ### END CODE HERE
     return
